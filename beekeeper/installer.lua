@@ -1,4 +1,4 @@
-local git_base_path = "https://github.com/icyeyes/icyhub/"
+local git_base_path = "https://raw.githubusercontent.com/icyeyes/IcyHub/master/"
 local libs = {"icycore"}
 local modules = {"bee"}
 
@@ -8,7 +8,7 @@ print("Установка библиотек: ")
 os.execute("cd ../lib")
 for key, lib in pairs(libs) do
     print(" ⮩ "..lib)
-    os.execute("wget "..git_base_path.."libs/"..lib..".lua")
+    os.execute("wget "..git_base_path.."lib/"..lib..".lua")
 end
 print("Все библиотеки установлены.")
 os.execute("cd ../home && mkdir beekeeper && cd beekeeper && mkdir module && cd module")
