@@ -1,0 +1,54 @@
+>> Метод: getQueen
+Документация: function():table -- Get the queen
+>> Метод: getStackInSlot
+Документация: function(slotNumber:number,proxy:boolean?):object -- Get details of an item in a particular slot
+>> Метод: condenseItems
+Документация: function() -- Condense and tidy the stacks in an inventory
+>> Метод: listSources
+Документация: function():table -- List all method sources
+>> Метод: pullItemIntoSlot
+Документация: function(direction:string{DOWN,UP,NORTH,SOUTH,WEST,EAST,UNKNOWN},slot:number,maxAmount:number?,intoSlot:number?):number -- Pull an item from a slot in another inventory into a slot in this one. Returns the amount of items moved
+>> Метод: getBeeBreedingData
+Документация: function():table -- Get the full breeding list thingy.
+>> Метод: listMethods
+Документация: function(filterSource:string?):string -- List all the methods available
+>> Метод: getInventoryName
+Документация: function():string -- Get the name of this inventory
+>> Метод: canBreed
+Документация: function():boolean -- Can the bees breed?
+>> Метод: pushItem
+Документация: function(direction:string{DOWN,UP,NORTH,SOUTH,WEST,EAST,UNKNOWN},slot:number,maxAmount:number?,intoSlot:number?):number -- Push an item from the current inventory into pipe or slot on the other inventory. Returns the amount of items moved
+>> Метод: getAllStacks
+Документация: function(proxy:boolean?):table -- Get a table with all the items of the chest
+>> Метод: expandStack
+Документация: function(stack:{id:string,dmg:number?,qty:number?,...}):table -- Get full stack information from id and/or damage
+>> Метод: getBeeChildren
+Документация: function(parentYpe:string):table -- Get possible mutations that can be created with given bee
+>> Метод: slot
+Документация: -1
+>> Метод: swapStacks
+Документация: function(from:number,to:number,fromDirection:string{DOWN,UP,NORTH,SOUTH,WEST,EAST,UNKNOWN}?,fromDirection:string{DOWN,UP,NORTH,SOUTH,WEST,EAST,UNKNOWN}?) -- Swap two slots in the inventory
+>> Метод: getDrone
+Документация: function():table -- Get the drone
+>> Метод: getAdvancedMethodsData
+Документация: function(method:string?):table -- Get a complete table of information about all available methods
+>> Метод: pushItemIntoSlot
+Документация: function(direction:string{DOWN,UP,NORTH,SOUTH,WEST,EAST,UNKNOWN},slot:number,maxAmount:number?,intoSlot:number?):number -- Push an item from the current inventory into pipe or slot on the other inventory. Returns the amount of items moved
+>> Метод: pullItem
+Документация: function(direction:string{DOWN,UP,NORTH,SOUTH,WEST,EAST,UNKNOWN},slot:number,maxAmount:number?,intoSlot:number?):number -- Pull an item from a slot in another inventory into a slot in this one. Returns the amount of items moved
+>> Метод: getInventorySize
+Документация: function():number -- Get the size of this inventory
+>> Метод: getBeeParents
+Документация: function(beeName:string):table -- Get the parents for a particular mutation
+>> Метод: destroyStack
+Документация: function(slotNumber:number) -- Destroy a stack
+>> Метод: breedingProgress
+Документация: function():number -- Breeding progress (in %)
+>> Метод: listAllSpecies
+Документация: function():table -- Get all known bees mutations
+>> Метод: address
+Документация: b3a4e385-731b-4405-9d91-213159a1b3b1
+>> Метод: type
+Документация: peripheral
+>> Метод: doc
+Документация: function(method:string):string -- Brief description of method

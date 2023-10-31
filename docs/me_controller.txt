@@ -1,0 +1,80 @@
+>> Метод: condenseItems
+Документация: function() -- Condense and tidy the stacks in an inventory
+>> Метод: getMaxEnergyStored
+Документация: function([direction:number=6]):number -- Returns the maximum amount of stored energy for the given side.
+>> Метод: swapStacks
+Документация: function(from:number,to:number,fromDirection:string{DOWN,UP,NORTH,SOUTH,WEST,EAST,UNKNOWN}?,fromDirection:string{DOWN,UP,NORTH,SOUTH,WEST,EAST,UNKNOWN}?) -- Swap two slots in the inventory
+>> Метод: doc
+Документация: function(method:string):string -- Brief description of method
+>> Метод: getInventoryName
+Документация: function():string -- Get the name of this inventory
+>> Метод: slot
+Документация: -1
+>> Метод: getDemandedEnergy
+Документация: function():number -- Get the maximum safe EU input
+>> Метод: getGasesInNetwork
+Документация: function():table -- Get a list of the stored gases in the network.
+>> Метод: destroyStack
+Документация: function(slotNumber:number) -- Destroy a stack
+>> Метод: getCraftingCPUs
+Документация: function():table -- Get a list of tables representing the available CPUs in the network.
+>> Метод: getCraftables
+Документация: function([filter:table]):table -- Get a list of known item recipes. These can be used to issue crafting requests.
+>> Метод: getStackInSlot
+Документация: function(slotNumber:number,proxy:boolean?):object -- Get details of an item in a particular slot
+>> Метод: getEUSinkTier
+Документация: function():number -- Determine the tier of this energy sink (1 = LV, 2 = MV, 3 = HV, 4 = EV)
+>> Метод: isEnergyProvider
+Документация: function():number -- Returns whether this component can provide energy.
+>> Метод: getItemsInNetwork
+Документация: function([filter:table]):table -- Get a list of the stored items in the network.
+>> Метод: listSources
+Документация: function():table -- List all method sources
+>> Метод: getMaxStoredPower
+Документация: function():number -- Get the maximum stored power in the network.
+>> Метод: pullItem
+Документация: function(direction:string{DOWN,UP,NORTH,SOUTH,WEST,EAST,UNKNOWN},slot:number,maxAmount:number?,intoSlot:number?):number -- Pull an item from a slot in another inventory into a slot in this one. Returns the amount of items moved
+>> Метод: listMethods
+Документация: function(filterSource:string?):string -- List all the methods available
+>> Метод: getFluidsInNetwork
+Документация: function():table -- Get a list of the stored fluids in the network.
+>> Метод: getSinkTier
+Документация: function
+>> Метод: expandStack
+Документация: function(stack:{id:string,dmg:number?,qty:number?,...}):table -- Get full stack information from id and/or damage
+>> Метод: pushItem
+Документация: function(direction:string{DOWN,UP,NORTH,SOUTH,WEST,EAST,UNKNOWN},slot:number,maxAmount:number?,intoSlot:number?):number -- Push an item from the current inventory into pipe or slot on the other inventory. Returns the amount of items moved
+>> Метод: pullItemIntoSlot
+Документация: function(direction:string{DOWN,UP,NORTH,SOUTH,WEST,EAST,UNKNOWN},slot:number,maxAmount:number?,intoSlot:number?):number -- Pull an item from a slot in another inventory into a slot in this one. Returns the amount of items moved
+>> Метод: getIdlePowerUsage
+Документация: function():number -- Get the idle power usage of the network.
+>> Метод: isEnergyReceiver
+Документация: function():number -- Returns whether this component can receive energy.
+>> Метод: getItemDetail
+Документация: function(item:{id:string,dmg:number?,nbt_hash:string?},proxy:boolean?):object -- Retrieves details about the specified item from the ME Network.
+>> Метод: getCpus
+Документация: function():table -- Get a list of tables representing the available CPUs in the network.
+>> Метод: getAvgPowerUsage
+Документация: function():number -- Get the average power usage of the network.
+>> Метод: getAdvancedMethodsData
+Документация: function(method:string?):table -- Get a complete table of information about all available methods
+>> Метод: getEnergyStored
+Документация: function([direction:number=6]):number -- Returns the amount of stored energy for the given side.
+>> Метод: store
+Документация: function(filter:table, dbAddress:string[, startSlot:number[, count:number]]): Boolean -- Store items in the network matching the specified filter in the database with the specified address.
+>> Метод: getAvgPowerInjection
+Документация: function():number -- Get the average power injection into the network.
+>> Метод: type
+Документация: me_controller
+>> Метод: getStoredPower
+Документация: function():number -- Get the stored power in the network. 
+>> Метод: getAvailableItems
+Документация: function(details:string{NONE,PROXY,ALL}?):table -- Get a list of the stored and craftable items in the network.
+>> Метод: pushItemIntoSlot
+Документация: function(direction:string{DOWN,UP,NORTH,SOUTH,WEST,EAST,UNKNOWN},slot:number,maxAmount:number?,intoSlot:number?):number -- Push an item from the current inventory into pipe or slot on the other inventory. Returns the amount of items moved
+>> Метод: address
+Документация: 9e693dd8-2bbe-4f8b-8c8b-f898d119b073
+>> Метод: getInventorySize
+Документация: function():number -- Get the size of this inventory
+>> Метод: getAllStacks
+Документация: function(proxy:boolean?):table -- Get a table with all the items of the chest

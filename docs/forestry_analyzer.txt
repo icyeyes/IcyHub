@@ -1,0 +1,56 @@
+>> Метод: hasWork
+Документация: function():boolean -- Checks if the machine is running.
+>> Метод: isWorking
+Документация: function():boolean -- Get whether the analyzer can work.
+>> Метод: getProgress
+Документация: function():boolean -- Get the progress of the current operation.
+>> Метод: type
+Документация: forestry_analyzer
+>> Метод: getMaxEnergyStored
+Документация: function([direction:number=6]):number -- Returns the maximum amount of stored energy for the given side.
+>> Метод: listSources
+Документация: function():table -- List all method sources
+>> Метод: pullItemIntoSlot
+Документация: function(direction:string{DOWN,UP,NORTH,SOUTH,WEST,EAST,UNKNOWN},slot:number,maxAmount:number?,intoSlot:number?):number -- Pull an item from a slot in another inventory into a slot in this one. Returns the amount of items moved
+>> Метод: swapStacks
+Документация: function(from:number,to:number,fromDirection:string{DOWN,UP,NORTH,SOUTH,WEST,EAST,UNKNOWN}?,fromDirection:string{DOWN,UP,NORTH,SOUTH,WEST,EAST,UNKNOWN}?) -- Swap two slots in the inventory
+>> Метод: listMethods
+Документация: function(filterSource:string?):string -- List all the methods available
+>> Метод: getInventoryName
+Документация: function():string -- Get the name of this inventory
+>> Метод: pushItem
+Документация: function(direction:string{DOWN,UP,NORTH,SOUTH,WEST,EAST,UNKNOWN},slot:number,maxAmount:number?,intoSlot:number?):number -- Push an item from the current inventory into pipe or slot on the other inventory. Returns the amount of items moved
+>> Метод: getStackInSlot
+Документация: function(slotNumber:number,proxy:boolean?):object -- Get details of an item in a particular slot
+>> Метод: getTankInfo
+Документация: function(direction:string{DOWN,UP,NORTH,SOUTH,WEST,EAST,UNKNOWN}?):table -- A table of tanks will be returned, each with a table of information
+>> Метод: pullItem
+Документация: function(direction:string{DOWN,UP,NORTH,SOUTH,WEST,EAST,UNKNOWN},slot:number,maxAmount:number?,intoSlot:number?):number -- Pull an item from a slot in another inventory into a slot in this one. Returns the amount of items moved
+>> Метод: slot
+Документация: -1
+>> Метод: expandStack
+Документация: function(stack:{id:string,dmg:number?,qty:number?,...}):table -- Get full stack information from id and/or damage
+>> Метод: getAdvancedMethodsData
+Документация: function(method:string?):table -- Get a complete table of information about all available methods
+>> Метод: pushItemIntoSlot
+Документация: function(direction:string{DOWN,UP,NORTH,SOUTH,WEST,EAST,UNKNOWN},slot:number,maxAmount:number?,intoSlot:number?):number -- Push an item from the current inventory into pipe or slot on the other inventory. Returns the amount of items moved
+>> Метод: getEnergyStored
+Документация: function([direction:number=6]):number -- Returns the amount of stored energy for the given side.
+>> Метод: isEnergyProvider
+Документация: function():number -- Returns whether this component can provide energy.
+>> Метод: getInventorySize
+Документация: function():number -- Get the size of this inventory
+>> Метод: getIndividualOnDisplay
+Документация: function():boolean -- Get info on the currently present bee.
+>> Метод: destroyStack
+Документация: function(slotNumber:number) -- Destroy a stack
+>> Метод: isEnergyReceiver
+Документация: function():number -- Returns whether this component can receive energy.
+>> Метод: getAllStacks
+Документация: function(proxy:boolean?):table -- Get a table with all the items of the chest
+>> Метод: address
+Документация: 3f0e68e3-3085-4146-83d2-e43fbca37966
+>> Метод: condenseItems
+Документация: function() -- Condense and tidy the stacks in an inventory
+>> Метод: doc
+Документация: function(method:string):string -- Brief description of method
